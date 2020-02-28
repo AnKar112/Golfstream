@@ -1431,10 +1431,13 @@ body {
       @media (max-width: 768px) {
         .footer .footer-main .leftside {
           width: 100%;
-          padding: 90px 0px 80px 20px; } }
+          padding: 90px 20px 80px 20px; } }
       @media (max-width: 480px) {
         .footer .footer-main .leftside {
-          padding: 50px 0px 68px 10px; } }
+          padding: 50px 20px 68px 10px; } }
+      @media (max-width: 320px) {
+        .footer .footer-main .leftside {
+          padding-right: 10px; } }
       .footer .footer-main .leftside .leftside_title {
         font-family: 'Russo One';
         font-size: 34px;
