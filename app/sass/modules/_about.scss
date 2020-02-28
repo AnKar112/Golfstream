@@ -1,0 +1,155 @@
+.about {
+    padding: 145px 0 125px;
+    @media(max-width: 1600px) {
+        padding: 150px 0 150px;
+    }
+    @media(max-width: 768px) {
+        padding: 80px 0 90px;
+    }
+    @media(max-width: 320px) {
+        padding: 50px 0 60px;
+    }
+    .about-main {
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 768px) {
+            flex-direction: column;
+        }
+        .about-title {
+            font-family: 'Russo One';
+            font-size: 34px;
+            line-height: 100%;
+            letter-spacing: 0.05em;
+            color: #1A1A1A;
+            @media(max-width: 1600px) {
+                font-size: 28px;
+            }
+            @media(max-width: 768px) {
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+            @media(max-width: 320px) {
+                font-size: 22px;
+            }
+        }
+        .about-content {
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            @media(max-width: 768px) {
+                width: 100%;
+            }
+            .about-content_title {
+                font-family: 'Montserrat';
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 140%;
+                margin-bottom: 50px;
+                @media(max-width: 1600px) {
+                    font-size: 24px;
+                }
+                @media(max-width: 768px) {
+                    font-size: 20px;
+                    width: 94%;
+                    margin-bottom: 20px;
+                }
+                @media(max-width: 320px) {
+                    font-size: 16px;
+                    width: 99%;
+                }
+            }
+            .about-content_text {
+                display: flex;
+                margin-bottom: 70px;
+                @media(max-width: 768px) {
+                    margin-bottom: 30px;
+                }
+                @media(max-width: 320px) {
+                    flex-direction: column;
+                }
+                p {
+                    font-family: 'Montserrat';
+                    font-weight: 300;
+                    font-size: 17px;
+                    line-height: 140%;
+                    color: #000000;
+                    @media(max-width: 1600px) {
+                        font-size: 15px;
+                    }
+                    @media(max-width: 768px) {
+                        font-size: 14px;
+                    }
+                    @media(max-width: 320px) {
+                        font-size: 13px;
+                    }
+                    &:first-child {
+                        margin-right: 70px;
+                        @media(max-width: 1600px) {
+                            margin-right: 60px;
+                        }
+                        @media(max-width: 768px) {
+                            margin-right: 40px;
+                        }
+                        @media(max-width: 320px) {
+                            margin: 0 0 15px 0;
+                        }
+                    }
+                }
+            }
+            .about-content_counters {
+                display: flex;
+                .about-content_counters-item {
+                    margin-right: 140px;
+                    @media(max-width: 768px) {
+                        margin-right: 100px;
+                    }
+                    @media(max-width: 480px) {
+                        margin-right: 90px;
+                    }
+                    @media(max-width: 320px) {
+                        margin-right: 50px;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+                .about-content_counters-title {
+                    font-family: 'Montserrat';
+                    font-weight: 300;
+                    font-size: 58px;
+                    color: #1A1A1A;
+                    margin-bottom: 10px;
+                    @media(max-width: 1600px) {
+                        font-size: 48px;
+                    }
+                    @media(max-width: 768px) {
+                        font-size: 34px;;
+                    }
+                    @media(max-width: 320px) {
+                        font-size: 30px;;
+                    }
+                }
+                .about-content_counters-desc {
+                    font-family: 'San Francisco Display Regular';
+                    font-size: 17px;
+                    color: #828282;
+                    @media(max-width: 1600px) {
+                        font-size: 14px;
+                    }
+                    @media(max-width: 768px) {
+                        font-size: 13px;;
+                    }
+                    @media(max-width: 320px) {
+                        font-size: 12px;;
+                    }
+                    .br_320 {
+                        @media(max-width: 320px) {
+                            display:block;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.wrapper {
+  padding: 0 240px;
+  width: calc(100% - 480px);
+  max-width: 1440px;
+  margin: 0 auto;
+  @media(max-width: 1600px) {
+    padding: 0 200px; 
+    width: calc(100% - 400px);
+    max-width: 1200px;
+  }
+  @media(max-width: 1366px) {
+    padding: 0 33px; 
+    width: calc(100% - 66px);
+    max-width: 1300px;
+  }
+  @media(max-width: 768px) {
+    padding: 0 20px; 
+    width: calc(100% - 40px);
+    max-width: 728px;
+  }
+  @media(max-width: 320px) {
+    padding: 0 10px; 
+    width: calc(100% - 20px);
+    max-width: 728px;
+  }
+}
+
+@font-face {
+  font-family: 'San Francisco Display Regular';
+  src: url('../fonts/SFUIDisplay-Regular.eot');
+  src: url('../fonts/SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SFUIDisplay-Regular.woff') format('woff'),
+  url('../fonts/SFUIDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
