@@ -7,12 +7,20 @@
     "gulp-rename": "^1.4.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-cli": "^2.0.1",
     "gulp-minify-html": "^1.0.6",
     "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglify-es": "^2.0.0",
+    "uglify-es": "^3.3.9",
+    "uglify-js-es6": "^2.8.9"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

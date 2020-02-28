@@ -2,7 +2,7 @@ var gulp        = require('gulp'),
     sass        = require('gulp-sass'), 
     browserSync = require('browser-sync'),
     mincss      = require('gulp-minify-css'),
-    minjs       = require('gulp-uglify'),
+    minjs       = require('gulp-uglify-es'),
     minhtml     = require('gulp-minify-html');
 
 gulp.task('sass', function(){ 
@@ -37,7 +37,7 @@ gulp.task('mincss', function() {
 
 gulp.task('minjs', function() {
     return gulp.src('app/js/*.js')
-        .pipe(minjs())
+        .pipe(minjs.default())
         .pipe(gulp.dest('dist/js'))
 });
 
@@ -57,4 +57,9 @@ gulp.task('copy-fonts', function() {
         .pipe(gulp.dest('dist/fonts'))
 });
 
-gulp.task('mincopyall', gulp.series('mincss', 'minhtml', 'copy-fonts'));
+gulp.task('copy-docs', function() {
+    return gulp.src('app/docs/*.*')
+        .pipe(gulp.dest('dist/docs'))
+});
+
+gulp.task('mincopyall', gulp.series('mincss', 'minhtml', 'minjs', 'copy-img', 'copy-fonts', 'copy-docs'));
