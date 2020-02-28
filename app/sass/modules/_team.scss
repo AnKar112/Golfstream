@@ -7,8 +7,9 @@
     @media(max-width: 768px) {
         background: url(../img/team_bg_768.png) no-repeat center 0%;
     }
-    @media(max-width: 320px) {
+    @media(max-width: 480px) {
         background: url(../img/team_bg_320.png) no-repeat center 0%;
+        background-size: cover;
     }
     .team-main {
         padding: 100px 0;
@@ -64,7 +65,6 @@
                 width: 25%;
                 @media(max-width: 768px) {
                     width: 36.401%;
-                    height: 405px;
                     margin-bottom: 50px;
                 }
                 @media(max-width: 480px) {
@@ -90,6 +90,9 @@
                     @media(max-width: 1366px) {
                         margin-right: 65px;
                     }
+                    @media(max-width: 850px) {
+                        margin-right: 35px;
+                    }
                     @media(max-width: 768px) {
                         margin-right: 115px;
                         margin-bottom: 50px;
@@ -111,6 +114,9 @@
                     @media(max-width: 1366px) {
                         margin-right: 65px;
                     }
+                    @media(max-width: 850px) {
+                        margin-right: 35px;
+                    }
                     @media(max-width: 768px) {
                         margin-right: 0;
                         margin-bottom: 50px;
@@ -127,6 +133,9 @@
                     margin-bottom: 80px;
                     @media(max-width: 1366px) {
                         margin-right: 65px;
+                    }
+                    @media(max-width: 850px) {
+                        margin-right: 35px;
                     }
                     @media(max-width: 768px) {
                         margin-right: 115px;
@@ -145,6 +154,9 @@
                     @media(max-width: 1600px) {
                         margin-right: 115px;
                         margin-bottom: 50px;
+                    }
+                    @media(max-width: 850px) {
+                        margin-right: 35px;
                     }
                     @media(max-width: 1366px) {
                         margin-right: 65px;
@@ -197,7 +209,7 @@
                     @media(max-width: 768px) {
                         font-size: 13px;
                     } 
-                    @media(max-width: 768px) {
+                    @media(max-width: 320px) {
                         margin-top: 10px;
                     } 
                 }

@@ -15,7 +15,7 @@
         .projects-header {
             display: flex;
             justify-content: space-between;
-            @media(max-width: 768px) {
+            @media(max-width: 920px) {
                 flex-direction: column;
             }
             .projects-header_title {
@@ -27,7 +27,7 @@
                     font-size: 28px;
                     margin-right: 192px;
                 }
-                @media(max-width: 768px) {
+                @media(max-width: 920px) {
                     font-size: 26px;
                     width: auto;
                     margin-right: 0;
@@ -47,12 +47,12 @@
                 @media(max-width: 1600px) {
                     font-size: 24px;
                 }
-                @media(max-width: 768px) {
+                @media(max-width: 920px) {
                     font-size: 20px;
+                    width: 100%;
                 }
                 @media(max-width: 480px) {
                     font-size: 16px;
-                    width: 100%;
                 }
             }
         }
@@ -66,7 +66,7 @@
                     margin: 90px 0 30px;
                     height: 332px;
                 }
-                @media(max-width: 768px) {
+                @media(max-width: 920px) {
                     margin: 50px 0 20px;
                     height: 607px;
                 }
@@ -86,8 +86,8 @@
                     @media(max-width: 1600px) {
                         width: 64.8333333%;
                     }
-                    @media(max-width: 768px) {
-                        width: 54.94%;
+                    @media(max-width: 920px) {
+                        width: 400px;
                         flex-direction: column;
                     }
                     @media(max-width: 480px) {
@@ -101,7 +101,7 @@
                         @media(max-width: 1600px) {
                             left: 840px;
                         }
-                        @media(max-width: 768px) {
+                        @media(max-width: 920px) {
                             left: 460px;
                         }
                         @media(max-width: 480px) {
@@ -116,7 +116,7 @@
                         @media(max-width: 1600px) {
                             left: 1680px;
                         }
-                        @media(max-width: 768px) {
+                        @media(max-width: 920px) {
                             left: 920px;
                         }
                         @media(max-width: 480px) {
@@ -131,7 +131,7 @@
                         @media(max-width: 1600px) {
                             left: 2520px;
                         }
-                        @media(max-width: 768px) {
+                        @media(max-width: 920px) {
                             left: 1380px;
                         }
                         @media(max-width: 480px) {
@@ -146,7 +146,7 @@
                         @media(max-width: 1600px) {
                             left: 3360px;
                         }
-                        @media(max-width: 768px) {
+                        @media(max-width: 920px) {
                             left: 1840px;
                         }
                         @media(max-width: 480px) {
@@ -161,7 +161,7 @@
                         @media(max-width: 1600px) {
                             left: 4200px;
                         }
-                        @media(max-width: 768px) {
+                        @media(max-width: 920px) {
                             left: 2300px;
                         }
                         @media(max-width: 480px) {
@@ -176,7 +176,7 @@
                         @media(max-width: 1600px) {
                             left: 5040px;
                         }
-                        @media(max-width: 768px) {
+                        @media(max-width: 920px) {
                             left: 2760px;
                         }
                         @media(max-width: 480px) {
@@ -191,7 +191,7 @@
                         @media(max-width: 1600px) {
                             left: 5880px;
                         }
-                        @media(max-width: 768px) {
+                        @media(max-width: 920px) {
                             left: 3220px;
                         }
                         @media(max-width: 480px) {
@@ -206,7 +206,7 @@
                         @media(max-width: 1600px) {
                             left: 6720px;
                         }
-                        @media(max-width: 768px) {
+                        @media(max-width: 920px) {
                             left: 3680px;
                         }
                         @media(max-width: 480px) {
@@ -221,7 +221,7 @@
                         @media(max-width: 1600px) {
                             left: 7560px;
                         }
-                        @media(max-width: 768px) {
+                        @media(max-width: 920px) {
                             left: 4140px;
                         }
                         @media(max-width: 480px) {
@@ -235,7 +235,7 @@
                         @media(max-width: 1600px) {
                             height: 330px;
                         }
-                        @media(max-width: 768px) {
+                        @media(max-width: 920px) {
                             height: 300px;
                         }
                     }
@@ -254,7 +254,7 @@
                             width: 261px;
                             padding: 30px 25px 20px 20px;
                         }
-                        @media(max-width: 768px) {
+                        @media(max-width: 920px) {
                             width: auto;
                             padding: 30px 20px 18px 20px;
                             height: 265px;
@@ -272,7 +272,7 @@
                             @media(max-width: 1600px) {
                                 font-size: 20px;
                             }
-                            @media(max-width: 768px) {
+                            @media(max-width: 920px) {
                                 height: 125px;
                                 margin-bottom: 35px;
                             }
@@ -288,7 +288,7 @@
                             font-size: 12px;
                             color: #999999;
                             margin-bottom: 10px;
-                            @media(max-width: 768px) {
+                            @media(max-width: 920px) {
                                 margin-bottom: 15px;
                             }
                             @media(max-width: 480px) {
@@ -325,6 +325,9 @@
                     @media(max-width: 1600px) {
                         left: 817.5px;
                     }
+                    @media(max-width: 920px) {
+                        left: 440px;
+                    }
                     @media(max-width: 768px) {
                         left: 446px;
                     }
@@ -337,6 +340,9 @@
                     left: -25.5px;
                     visibility: hidden;
                     opacity: 0;
+                    @media(max-width: 920px) {
+                        left: -20.5px;
+                    }
                     @media(max-width: 768px) {
                         left: -16.5px;
                     }

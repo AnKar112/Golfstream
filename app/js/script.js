@@ -116,7 +116,7 @@ arrowTo.onclick = function(e) {
     
     if (sliderCounter < sliderLength) {
         arrowBack.style.cssText = 'visibility: visible; opacity: 1'
-        if(window.matchMedia('(max-width: 768px)').matches){
+        if(window.matchMedia('(max-width: 920px)').matches){
             sliderItem.forEach((item) => {item.style.cssText='transform: translateX(-' + 460 * sliderCounter + 'px);'})
         } else if(window.matchMedia('(max-width: 1600px)').matches){
             sliderItem.forEach((item) => {item.style.cssText='transform: translateX(-' + 840 * sliderCounter + 'px);'})
@@ -139,7 +139,7 @@ arrowTo.onclick = function(e) {
 
 arrowBack.onclick = function(e) {
     if ( sliderCounter < sliderLength + 1 && sliderCounter > 2 ) {
-        if(window.matchMedia('(max-width: 768px)').matches){
+        if(window.matchMedia('(max-width: 920px)').matches){
             sliderItem.forEach((item) => {item.style.cssText='transform: translateX(-' + 460 * (sliderCounter - 2) + 'px);'})
         } else if(window.matchMedia('(max-width: 1600px)').matches){
             sliderItem.forEach((item) => {item.style.cssText='transform: translateX(-' + 840 * (sliderCounter - 2) + 'px);'})

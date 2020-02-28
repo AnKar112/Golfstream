@@ -55,10 +55,10 @@
                 }
                 @media(max-width: 768px) {
                     font-size: 20px;
+                    width: 99%;
                 }
-                @media(max-width: 320px) {
+                @media(max-width: 480px) {
                     font-size: 16px;
-                    width: 100%;
                 }
             }
         }
@@ -139,11 +139,11 @@
                         font-size: 14px;
                     }
                     @media(max-width: 768px) {
-                        height: 162px;
+                        min-height: 162px;
                         margin-bottom: 30px;
                     }
                     @media(max-width: 320px) {
-                        height: 272px;
+                        min-height: 272px;
                         font-size: 12px;
                         margin-bottom: 20px;
                     }
