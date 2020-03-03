@@ -43,8 +43,6 @@ table {
   border-spacing: 0; }
 
 html, body {
-  height: 100%;
-  min-height: 100%;
   overflow-x: hidden; }
 
 body {
@@ -763,14 +761,15 @@ body {
     .services .services-main .services-header {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 70px; }
+      padding-bottom: 70px; }
       @media (max-width: 768px) {
         .services .services-main .services-header {
           flex-direction: column;
-          margin-bottom: 40px; } }
+          padding-bottom: 40px;
+          border-bottom: 1px solid #1a1a1a; } }
       @media (max-width: 320px) {
         .services .services-main .services-header {
-          margin-bottom: 30px; } }
+          padding-bottom: 30px; } }
       .services .services-main .services-header .services-header_title {
         font-family: 'Russo One';
         font-size: 34px;
@@ -841,8 +840,7 @@ body {
         @media (max-width: 768px) {
           .services .services-main .services-content .services-content_desc {
             width: auto;
-            padding-top: 15px;
-            border-top: 1px solid #1a1a1a; } }
+            padding-top: 15px; } }
         .services .services-main .services-content .services-content_desc img {
           margin-bottom: 25px; }
           @media (max-width: 1600px) {

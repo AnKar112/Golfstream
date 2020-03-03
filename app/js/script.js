@@ -196,6 +196,7 @@ arrowBackLowScreen.onclick = function(e) {
     }
 }
 
+
 // Счётчик
 
 let aboutCounter = document.querySelectorAll('.about-content_counters-title')
@@ -299,3 +300,9 @@ form.addEventListener('submit', function(evt) {
     request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
     request.send('name=' + encodeURIComponent(dataForm[0]) + '&email=' + encodeURIComponent(dataForm[3]) + '&phone=' + encodeURIComponent(dataForm[1]) + '&company=' + encodeURIComponent(dataForm[2]) + '&userMessage=' + encodeURIComponent(dataForm[4]));
     });
+
+function fallback(video) {
+    let img = video.querySelector('img');
+    if (img)
+    video.parentNode.replaceChild(img, video);
+}
