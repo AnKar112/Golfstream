@@ -66,35 +66,57 @@
         .services-content {
             display: flex;
             justify-content: space-between;
+            height: 625px;
+            @media(max-width: 1600px) {
+                height: 515px;
+            }
             @media(max-width: 768px) {
+                height: 560px;
                 flex-direction: column;
+            }
+            @media(max-width: 480px) {
+                height: 600px;
+            }
+            @media(max-width: 380px) {
+                height: 650px;
+            }
+            @media(max-width: 330px) {
+                height: 660px;
+            }
+            @media(max-width: 320px) {
+                height: 540px;
             }
             .services-content_nav {
                 display: flex;
                 flex-direction: column;
-                @media(max-width: 768px) {
-                    display: none;
-                }
-                .services-content_nav-item {
-                    text-decoration: none;
-                    font-family: 'Montserrat';
-                    font-size: 17px;
-                    color: #3B4658;
-                    margin-bottom: 25px;
-                    cursor: pointer;
-                    transition: 0.5s;
-                    @media(max-width: 1600px) {
-                    margin-bottom: 20px;
-                    font-size: 14px;
+                div {
+                    display: flex;
+                    .services-content_nav-item {
+                        text-decoration: none;
+                        font-family: 'Montserrat';
+                        font-size: 17px;
+                        color: #3B4658;
+                        margin-bottom: 25px;
+                        cursor: pointer;
+                        transition: 0.5s;
+                        @media(max-width: 1600px) {
+                        margin-bottom: 20px;
+                        font-size: 14px;
+                        }
+                        &.active {
+                            transform: translateX(20px);
+                            font-weight: 600;
+                            color: #1A1A1A;
+                        }
                     }
                     &:last-child {
-                        margin-bottom: 0;
+                        .services-content_nav-item {
+                            margin-bottom: 0;
+                        }
                     }
-                    &.active {
-                        transform: translateX(20px);
-                        font-weight: 600;
-                        color: #1A1A1A;
-                    }
+                }
+                @media(max-width: 768px) {
+                    display: none;
                 }
             }
             .services-content_desc {
