@@ -52,7 +52,7 @@ menuItems.forEach((item, id) => {
             menuDesc.classList.add('fade-animation')
             menuItems.forEach((item) => { item.classList.remove('active') })
             e.target.classList.add('active')
-            setTimeout(to, 300)
+            setTimeout(to, 500)
         }
     }
 })
