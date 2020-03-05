@@ -1,28 +1,33 @@
 .team {
-    padding: 100px 0;
+    padding-top: 100px;
     background: url(../img/team_bg.png) no-repeat center 0%;
     background-size: cover;
     @media(max-width: 1600px) {
+        padding-top: 90px;
         background: url(../img/team_bg_1600.png) no-repeat center 0%;
+        background-size: cover;
     }
     @media(max-width: 768px) {
+        padding-top: 50px;
         background: url(../img/team_bg_768.png) no-repeat center 0%;
+        background-size: cover;
     }
     @media(max-width: 480px) {
         background: url(../img/team_bg_320.png) no-repeat center 0%;
         background-size: cover;
     }
     .team-main {
+        padding-bottom: 100px;
         display: flex;
         flex-direction: column;
         @media(max-width: 1600px) {
-            padding: 90px 0;
+            padding-bottom: 90px;
         }
         @media(max-width: 768px) {
-            padding: 50px 0 59px;
+            padding-bottom: 59px;
         }
         @media(max-width: 320px) {
-            padding: 50px 25px 63px 25px;
+            padding: 0px 25px 63px 25px;
         }
         .team-title {
             font-family: 'Russo One';
