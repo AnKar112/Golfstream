@@ -330,7 +330,7 @@ let isScrolling = false;
     let listItems = document.querySelectorAll(".scroll");
 
     function scrolling(e) {
-   
+        
         for (let i = 0; i < listItems.length; i++) {
           let listItem = listItems[i];
           
