@@ -527,6 +527,7 @@ body {
               width: 100%; } }
 
 .team {
+  padding: 100px 0;
   background: url(../img/team_bg.png) no-repeat center 0%;
   background-size: cover; }
   @media (max-width: 1600px) {
@@ -540,7 +541,6 @@ body {
       background: url(../img/team_bg_320.png) no-repeat center 0%;
       background-size: cover; } }
   .team .team-main {
-    padding: 100px 0;
     display: flex;
     flex-direction: column; }
     @media (max-width: 1600px) {
