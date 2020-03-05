@@ -217,15 +217,17 @@ function counter(val, el, timeout, step) {
     })();
 }
 
-aboutCounter.forEach((item, id) => {
-    if (id == 0) {
-        counter(23, item, 80, 1);
-    } else if (id == 1) {
-        counter(55, item, 80, 1);
-    } else if (id == 2) {
-        counter(30, item, 80, 1);
-    }
-})
+function counterStart () {
+    aboutCounter.forEach((item, id) => {
+        if (id == 0) {
+            counter(23, item, 80, 1);
+        } else if (id == 1) {
+            counter(55, item, 80, 1);
+        } else if (id == 2) {
+            counter(30, item, 80, 1);
+        }
+    })
+}
 
 
 // Anchors from header
@@ -306,3 +308,61 @@ form.addEventListener('submit', function(evt) {
     if(window.matchMedia('(max-width: 768px)').matches) {
         document.querySelector('.videoBackground').style.cssText = 'display: none'
     }
+
+// Fade effect on scroll and counter start in About section
+
+let isScrolling = false;
+ 
+    window.addEventListener("scroll", throttleScroll, false);
+ 
+    function throttleScroll(e) {
+      if (isScrolling == false) {
+        window.requestAnimationFrame(function() {
+          scrolling(e);
+          isScrolling = false;
+        });
+      }
+      isScrolling = true;
+    }
+
+    document.addEventListener("DOMContentLoaded", scrolling, false);
+ 
+    let listItems = document.querySelectorAll(".scroll");
+
+    function scrolling(e) {
+   
+        for (let i = 0; i < listItems.length; i++) {
+          let listItem = listItems[i];
+          
+          if (isPartiallyVisible(listItem)) {
+            listItem.classList.add("active");
+          } else {
+            listItem.classList.remove("active");
+          }
+
+          if (isFullyVisible(listItem)) {
+            if (listItem.classList.contains('about-main') && aboutCounter[0].textContent < 1) {
+                counterStart ();
+            }
+          }
+        }
+      }
+   
+      function isPartiallyVisible(el) {
+        let elementBoundary = el.getBoundingClientRect();
+   
+        let top = elementBoundary.top;
+        let bottom = elementBoundary.bottom;
+        let height = elementBoundary.height;
+   
+        return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+      }
+   
+      function isFullyVisible(el) {
+        var elementBoundary = el.getBoundingClientRect();
+   
+        var top = elementBoundary.top;
+        var bottom = elementBoundary.bottom;
+   
+        return ((top >= 0) && (bottom <= window.innerHeight));
+      }

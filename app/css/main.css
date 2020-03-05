@@ -25,7 +25,8 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+  overflow-y: hidden; }
 
 /* ol, ul {
 	list-style: none;
@@ -88,6 +89,15 @@ body {
   src: url("../fonts/SFUIDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Regular.woff") format("woff"), url("../fonts/SFUIDisplay-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.scroll {
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  transform: translate3d(0, 50px, 0); }
+
+.scroll.active {
+  opacity: 1;
+  transform: translate3d(0px, 0, 0); }
 
 /*---HEADER---*/
 .header {
