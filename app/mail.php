@@ -6,7 +6,7 @@ $phone = $_POST['phone'];
 $company = $_POST['company'];
 $userMessage = $_POST['message'];
 
-$to = "ankarfromhell@gmail.com";
+$to = "big-golfstrim@ukr.net";
 $subject ='Отправлена заявка с сайта Golfstream';
 $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/html; charset=utf-8\r\n";
